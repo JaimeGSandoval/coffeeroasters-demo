@@ -23,6 +23,7 @@
     "babel-loader": "^8.2.2",
     "browserslist": "^4.16.8",
     "clean-webpack-plugin": "*",
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
     "file-loader": "^6.2.0",
