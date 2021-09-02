@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 // const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin');
 const path = require('path');
 
@@ -17,6 +18,63 @@ module.exports = {
 
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].bundle.css',
+    }),
+
+    new CopyPlugin({
+      patterns: [
+        // Home
+        {
+          from: 'src/assets/images/home/desktop',
+          to: 'images/desktop',
+        },
+        {
+          from: 'src/assets/images/home/tablet',
+          to: 'images/tablet',
+        },
+        {
+          from: 'src/assets/images/home/mobile',
+          to: 'images/mobile',
+        },
+
+        // About
+        {
+          from: 'src/assets/images/about/desktop',
+          to: 'images/desktop',
+        },
+        {
+          from: 'src/assets/images/about/tablet',
+          to: 'images/tablet',
+        },
+        {
+          from: 'src/assets/images/about/mobile',
+          to: 'images/mobile',
+        },
+
+        // Plan
+        {
+          from: 'src/assets/images/plan/desktop',
+          to: 'images/desktop',
+        },
+        {
+          from: 'src/assets/images/plan/tablet',
+          to: 'images/tablet',
+        },
+        {
+          from: 'src/assets/images/plan/mobile',
+          to: 'images/mobile',
+        },
+
+        // Shared
+        {
+          from: 'src/assets/images/Shared/desktop',
+          to: 'images/desktop',
+        },
+        {
+          from: 'src/assets/images/Shared/mobile',
+          to: 'images/mobile',
+        },
+        // { from: 'src/assets/icons', to: 'icons' },
+      ],
     }),
 
     // new PreloadWebpackPlugin({
