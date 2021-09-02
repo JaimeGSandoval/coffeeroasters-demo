@@ -1,0 +1,1 @@
+{"version":3,"file":"js/main.18327a63483e8328706a.bundle.js","mappings":"yBAEqBA,QAAQC,IAAI,a","sources":["webpack://coffeeroasters/./src/js/index.js"],"sourcesContent":["import '../sass/styles.scss';\n\nconst bankai = () => console.log('Ban-kai!!');\n\nbankai();\n"],"names":["console","log"],"sourceRoot":""}
