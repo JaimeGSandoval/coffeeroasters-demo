@@ -65,16 +65,7 @@ module.exports = {
           to: 'images/mobile',
         },
 
-        // Shared
-        {
-          from: 'src/assets/images/Shared/desktop',
-          to: 'images/desktop',
-        },
-        {
-          from: 'src/assets/images/Shared/mobile',
-          to: 'images/mobile',
-        },
-        // { from: 'src/assets/icons', to: 'icons' },
+        { from: 'src/assets/icons', to: 'icons' },
       ],
     }),
 
