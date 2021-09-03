@@ -1,7 +1,9 @@
 *.sketch
 *.fig
 *.xd
+*.txt
 .DS_Store
 .prettierignore
-pages
+starter-pages
 node_modules
+project-details.md

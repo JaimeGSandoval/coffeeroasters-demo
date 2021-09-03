@@ -1,4 +1,4 @@
-import '../sass/styles.scss';
+import '../sass/main.scss';
 
 const bankai = () => console.log('Ban-kai!!');
 
