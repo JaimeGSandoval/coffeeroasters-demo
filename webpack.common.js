@@ -65,6 +65,12 @@ module.exports = {
           to: 'images/mobile',
         },
 
+        // Coffee
+        {
+          from: 'src/assets/images/coffee',
+          to: 'images/coffee',
+        },
+
         // { from: 'src/assets/icons', to: 'icons' },
       ],
     }),
