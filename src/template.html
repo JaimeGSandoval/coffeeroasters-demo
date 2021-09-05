@@ -5,15 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Coffeeroasters</title>
 </head>
 
 <body>
 
-  <h1>coffeehouse</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, magnam.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, commodi.</p>
+  <div class="mobile-nav-page">
+    <div class="mobile-page-header">
+      <img src="./assets/icons/logo.svg" alt="logo" class="mobile-nav-logo">
+      <img src="./assets/icons/icon-close.svg" alt="mobile icon close" class="mobile-close">
+    </div>
 
+    <nav class="mobile-nav" aria-label="mobile navigation">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="/" class="mobile-nav-links" data-link>home</a>
+        </li>
+        <li>
+          <a href="/about" class="mobile-nav-links" data-link>about us</a>
+        </li>
+        <li>
+          <a href="/plan" class="mobile-nav-links" data-link>create a plan</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="mobile-header">
+    <img src="./assets/icons/logo.svg" class="mobile-logo" alt="logo">
+    <img src="./assets/icons/icon-hamburger.svg" class="hamburger-menu" alt="mobile menu icon">
+  </header>
+
+  <div id="app"></div>
 </body>
 
 </html>
