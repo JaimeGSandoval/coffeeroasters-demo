@@ -65,7 +65,7 @@ module.exports = {
           to: 'images/mobile',
         },
 
-        { from: 'src/assets/icons', to: 'icons' },
+        // { from: 'src/assets/icons', to: 'icons' },
       ],
     }),
 
@@ -139,10 +139,18 @@ module.exports = {
       },
 
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg|webp|svg)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name].[hash][ext]',
+        },
+      },
+
+      {
+        test: /\.(?:svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'icons/[name].[hash][ext]',
         },
       },
 
