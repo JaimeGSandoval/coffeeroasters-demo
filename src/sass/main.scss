@@ -1,19 +1,4 @@
 @import 'base/reset';
 @import 'base/typography';
 @import 'abstracts/vars';
-
-
-h1 {
-  font-family: $title_font, $backup_title;
-  color: $dark_cyan;
-}
-
-p {
-  font-family: $description_font, $backup_description_bold;
-  color: $pale_orange;
-}
-
-p:nth-of-type(2) {
-  font-family: $description_font_bold, $backup_description_bold;
-  color: $grey;
-}
+@import 'layout/mobile-header';

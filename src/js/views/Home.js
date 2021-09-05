@@ -7,7 +7,7 @@ class Home extends AbstractView {
   }
 
   getHtml() {
-    return `<h1>Home Page</h1>`;
+    return ``;
   }
 }
 

@@ -5,18 +5,19 @@ import '../sass/main.scss';
 
 const navigateTo = (url) => {
   history.pushState(null, null, url);
-  console.log(window.location);
 
   router();
 };
 
 const router = () => {
+  // create possible routes
   const routes = [
     { path: '/', view: Home },
     { path: '/about', view: About },
     { path: '/plan', view: Plan },
   ];
 
+  // map through routes to find the one that matches the pathname
   const potentialMatches = routes.map((route) => {
     return {
       route: route,
@@ -24,6 +25,7 @@ const router = () => {
     };
   });
 
+  // find the truthy match that'll be our route
   let match = potentialMatches.find((potentialMatch) => potentialMatch.isMatch);
 
   if (!match) {
@@ -32,11 +34,13 @@ const router = () => {
     };
   }
 
+  // create new view based on route
   const view = new match.route.view();
 
   document.getElementById('app').innerHTML = view.getHtml();
 };
 
+// every time the back or forward browser navigation is clicked set the route
 window.addEventListener('popstate', router);
 
 document.addEventListener('DOMContentLoaded', () => {
