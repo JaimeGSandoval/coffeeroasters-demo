@@ -3,3 +3,10 @@
 @import 'abstracts/vars';
 @import 'layout/mobile-nav';
 @import 'layout/mobile-header';
+@import 'layout/hero';
+
+
+main {
+  width: 88%;
+  margin: auto;
+}
