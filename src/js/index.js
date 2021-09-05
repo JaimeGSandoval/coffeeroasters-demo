@@ -1,6 +1,6 @@
 import Home from './views/Home';
-import About from './views/About';
-import Plan from './views/Plan';
+// import About from './views/About';
+// import Plan from './views/Plan';
 import '../sass/main.scss';
 
 const navigateTo = (url) => {
@@ -13,8 +13,8 @@ const router = () => {
   // create possible routes
   const routes = [
     { path: '/', view: Home },
-    { path: '/about', view: About },
-    { path: '/plan', view: Plan },
+    // { path: '/about', view: About },
+    // { path: '/plan', view: Plan },
   ];
 
   // map through routes to find the one that matches the pathname
