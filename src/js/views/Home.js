@@ -24,7 +24,7 @@ class Home extends AbstractView {
 
     <section class="collection-section">
       <h1 class="collection-header-text">our collection</h1>
-      <!-- 1 -->
+
       <div class="coffee-box">
         <div class="coffee-img-container">
           <picture>
@@ -79,6 +79,46 @@ class Home extends AbstractView {
         <p class="coffee-description">
           Ethiopian hand-harvested blend densely packed with vibrant fruit notes
         </p>
+      </div>
+    </section>
+
+    <section class="choose-us-section">
+
+      <div class="choose-description-container">
+        <h2 class="choose-title">Why choose us?</h2>
+        <p class="choose-description">
+          A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience
+          on every level.
+        </p>
+      </div>
+
+      <div class="perks-bg">
+        <div class="perks-container">
+
+          <div class="perk-box">
+            <img src="./icons/icon-coffee-bean.svg" alt="Coffee bean icon" class="perk-icon">
+            <h3 class="perk-title">Best quality</h3>
+            <p class="perk-description">
+              Discover an endless variety of the world's artisan coffee from each of our roasters.
+            </p>
+          </div>
+
+          <div class="perk-box">
+            <img src="./icons/icon-gift.svg" alt="Gift icon" class="perk-icon">
+            <h3 class="perk-title">Exclusive Benefits</h3>
+            <p class="perk-description exclusive-padding">
+              Special offers and swag when you subscribe, including 30% off your first shipment.
+            </p>
+          </div>
+
+          <div class="perk-box">
+            <img src="./icons/icon-truck.svg" alt="Truck icon" class="perk-icon">
+            <h3 class="perk-title">Free shipping</h3>
+            <p class="perk-description exclusive-padding">
+              We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     `;
