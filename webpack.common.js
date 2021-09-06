@@ -71,7 +71,7 @@ module.exports = {
           to: 'images/coffee',
         },
 
-        // { from: 'src/assets/icons', to: 'icons' },
+        { from: 'src/assets/icons', to: 'icons' },
       ],
     }),
 
@@ -156,7 +156,7 @@ module.exports = {
         test: /\.(?:svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'icons/[name].[hash][ext]',
+          filename: 'html-icons/[name].[hash][ext]',
         },
       },
 
