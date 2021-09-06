@@ -8,7 +8,7 @@ class Home extends AbstractView {
 
   getHtml() {
     return `
-    <section class="hero-section">
+          <section class="hero-section">
       <picture>
         <source srcset="./images/mobile/hero-coffeepress.webp">
         <img src="./images/mobile/hero-coffeepress.jpg" alt="image of coffee beans" class="hero">
@@ -19,7 +19,7 @@ class Home extends AbstractView {
         Start your mornings with the world’s best coffees. Try our expertly curated artisan
         coffees from our best roasters delivered directly to your door, at your schedule.
       </span>
-      <button class="create-plan-btn">create a plan</button>
+      <button class="create-plan-btn" data-link>create a plan</button>
     </section>
 
     <section class="collection-section">
@@ -120,6 +120,39 @@ class Home extends AbstractView {
           </div>
         </div>
       </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="plan-how-to-section">
+      <h2 class="how-to-title">How it works</h2>
+
+      <div class="step-box">
+        <span class="step-number">01</span>
+        <h3 class="step-title">Pick your coffee</h3>
+        <p class="step-description">
+          Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.
+        </p>
+      </div>
+
+      <div class="step-box">
+        <span class="step-number">02</span>
+        <h3 class="step-title">Choose the frequency</h3>
+        <p class="step-description custom-step-padding-1">
+          Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.
+        </p>
+      </div>
+
+      <div class="step-box">
+        <span class="step-number">03</span>
+        <h3 class="step-title">Receive and enjoy!</h3>
+        <p class="step-description custom-step-padding-1">
+          We ship your product within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
+        </p>
+      </div>
+
+      <button class="create-plan-btn-steps" data-link>create a plan</button>
+
     </section>
     `;
   }
