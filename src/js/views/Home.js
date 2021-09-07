@@ -154,6 +154,35 @@ class Home extends AbstractView {
       <button class="create-plan-btn-steps" data-link>create a plan</button>
 
     </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <img src="./icons/footer-logo.svg" class="footer-logo" alt="logo">
+      <ul class="footer-nav">
+        <li>
+          <a href="/" class="footer-nav-link" data-link>home</a>
+        </li>
+        <li>
+          <a href="/about" class="footer-nav-link" data-link>about us</a>
+        </li>
+        <li>
+          <a href="/plan" class="footer-nav-link" data-link>create a plan</a>
+        </li>
+      </ul>
+
+      <div class="social-icons-box">
+      <a href="#">
+        <img src="./icons/icon-facebook.svg" class="mobile-footer-logo" alt="facebook logo">
+      </a>
+      <a href="#">
+        <img src="./icons/icon-twitter.svg" class="mobile-footer-logo" alt="twitter logo">
+      </a>
+      <a href="#">
+        <img src="./icons/icon-instagram.svg" class="mobile-footer-logo" alt="instagram logo">
+      </a>
+      </div>
+    </div>
+  </footer>
     `;
   }
 }
