@@ -1,7 +1,23 @@
 import Home from './views/Home';
-// import About from './views/About';
-// import Plan from './views/Plan';
+import About from './views/About';
+import Plan from './views/Plan';
 import '../sass/main.scss';
+
+const mobileNavOpen = () => {
+  document.querySelector('.mobile-nav-page').classList.toggle('show');
+};
+
+document
+  .querySelector('.hamburger-menu')
+  .addEventListener('click', mobileNavOpen);
+
+const mobileNavClose = () => {
+  document.querySelector('.mobile-nav-page').classList.toggle('show');
+};
+
+document
+  .querySelector('.mobile-close')
+  .addEventListener('click', mobileNavClose);
 
 const navigateTo = (url) => {
   history.pushState(null, null, url);
@@ -13,8 +29,8 @@ const router = () => {
   // create possible routes
   const routes = [
     { path: '/', view: Home },
-    // { path: '/about', view: About },
-    // { path: '/plan', view: Plan },
+    { path: '/about', view: About },
+    { path: '/plan', view: Plan },
   ];
 
   // map through routes to find the one that matches the pathname
@@ -45,9 +61,14 @@ window.addEventListener('popstate', router);
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', (e) => {
-    if (e.target.matches('[data-link]')) {
-      e.preventDefault();
+    e.preventDefault();
+    if (e.target.matches('[data-footer-link]')) {
       navigateTo(e.target.href);
+    } else if (e.target.matches('[data-link]')) {
+      navigateTo(e.target.href);
+      mobileNavClose();
+    } else if (e.target.matches('[data-plan]')) {
+      navigateTo('/plan');
     }
   });
 

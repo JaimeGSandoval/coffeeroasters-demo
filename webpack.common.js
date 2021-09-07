@@ -2,7 +2,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-// const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin');
+const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -72,15 +72,14 @@ module.exports = {
         },
 
         { from: 'src/assets/icons', to: 'icons' },
-        // { from: 'src/assets/html-icons', to: 'html-icons' },
       ],
     }),
 
-    // new PreloadWebpackPlugin({
-    //   rel: 'preload',
-    //   include: 'allAssets',
-    //   fileBlacklist: [/\.(js|png|jpe?g|css|webp|ico)/],
-    // }),
+    new PreloadWebpackPlugin({
+      rel: 'preload',
+      include: 'allAssets',
+      fileBlacklist: [/\.(js|png|jpe?g|css|webp|ico|svg)/],
+    }),
   ],
 
   module: {
