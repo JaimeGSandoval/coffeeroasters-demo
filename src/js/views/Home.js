@@ -8,7 +8,7 @@ class Home extends AbstractView {
 
   getHtml() {
     return `
-          <section class="hero-section">
+    <section class="hero-section">
       <picture>
         <source srcset="./images/mobile/hero-coffeepress.webp">
         <img src="./images/mobile/hero-coffeepress.jpg" alt="image of coffee beans" class="hero">
@@ -19,7 +19,7 @@ class Home extends AbstractView {
         Start your mornings with the world’s best coffees. Try our expertly curated artisan
         coffees from our best roasters delivered directly to your door, at your schedule.
       </span>
-      <button class="create-plan-btn" data-link>create a plan</button>
+      <button class="create-plan-btn" data-plan>create a plan</button>
     </section>
 
     <section class="collection-section">
@@ -151,38 +151,39 @@ class Home extends AbstractView {
         </p>
       </div>
 
-      <button class="create-plan-btn-steps" data-link>create a plan</button>
+      <button class="create-plan-btn-steps" data-plan>create a plan</button>
 
     </section>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <img src="./icons/footer-logo.svg" class="footer-logo" alt="logo">
-      <ul class="footer-nav">
-        <li>
-          <a href="/" class="footer-nav-link" data-link>home</a>
-        </li>
-        <li>
-          <a href="/about" class="footer-nav-link" data-link>about us</a>
-        </li>
-        <li>
-          <a href="/plan" class="footer-nav-link" data-link>create a plan</a>
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="footer-container">
+        <img src="./icons/footer-logo.svg" class="footer-logo" alt="logo">
+        <ul class="footer-nav">
+          <li>
+            <a href="/" class="footer-nav-link" data-footer-link>home</a>
+          </li>
+          <li>
+            <a href="/about" class="footer-nav-link" data-footer-link>about us</a>
+          </li>
+          <li>
+            <a href="/plan" class="footer-nav-link" data-footer-link>create a plan</a>
+          </li>
+        </ul>
 
-      <div class="social-icons-box">
-      <a href="#">
-        <img src="./icons/icon-facebook.svg" class="mobile-footer-logo" alt="facebook logo">
-      </a>
-      <a href="#">
-        <img src="./icons/icon-twitter.svg" class="mobile-footer-logo" alt="twitter logo">
-      </a>
-      <a href="#">
-        <img src="./icons/icon-instagram.svg" class="mobile-footer-logo" alt="instagram logo">
-      </a>
+        <div class="social-icons-box">
+          <a href="#">
+            <img src="./icons/icon-facebook.svg" class="mobile-footer-logo" alt="facebook logo">
+          </a>
+          <a href="#">
+            <img src="./icons/icon-twitter.svg" class="mobile-footer-logo" alt="twitter logo">
+          </a>
+          <a href="#">
+            <img src="./icons/icon-instagram.svg" class="mobile-footer-logo" alt="instagram logo">
+          </a>
+        </div>
       </div>
-    </div>
   </footer>
+
     `;
   }
 }
