@@ -72,6 +72,7 @@ module.exports = {
         },
 
         { from: 'src/assets/icons', to: 'icons' },
+        // { from: 'src/assets/html-icons', to: 'html-icons' },
       ],
     }),
 
