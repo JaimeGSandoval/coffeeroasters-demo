@@ -8,13 +8,13 @@
 .choose-title {
   text-align: center;
   color: $bg_light_cream;
-  font-family: $title_font;
+  font-family: $title_font, serif;
   padding: 4rem 0 2rem 0;;
   font-size: 1.7rem;
 }
 
 .choose-description {
-  font-family: $description_font;
+  font-family: $description_font, sans-serif;
   color: $grey;
   text-align: center;
   line-height: 1.8rem;
@@ -46,14 +46,14 @@
 .perk-title {
   text-align: center;
   color: $bg_light_cream;
-  font-family: $title_font;
+  font-family: $title_font, serif;
   font-size: 1.5rem;
 }
 
 .perk-description {
   text-align: center;
   color: $bg_light_cream;
-  font-family: $description_font;
+  font-family: $description_font, sans-serif;
   padding: 2rem;
   padding-bottom: 2.5rem;
   line-height: 1.8rem;
