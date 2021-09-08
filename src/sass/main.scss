@@ -11,12 +11,10 @@
 @import 'layout/about/hero-about';
 @import 'layout/about/commitment';
 @import 'layout/about/quality';
+@import 'layout/about/headquarters';
 
-// * {
-//   border: 1px solid red;
-// }
 
-main {
+#app {
   width: 88%;
   margin: auto;
 }
