@@ -11,14 +11,14 @@
 
 .commitment-title {
   text-align: center;
-  font-family: $title_font, sans-serif;
+  font-family: $title_font, serif;
   color: $dark_grey_blue;
   font-size: 2rem;
   margin: 5rem 0 3rem 0;
 }
 
 .commitment-description {
-  font-family: $description_font, serif;
+  font-family: $description_font, sans-serif;
   color: $grey;
   line-height: 1.7rem;
   text-align: center;

@@ -15,7 +15,7 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: $title_font, sans-serif;
+  font-family: $title_font, serif;
   font-size: 2rem;
   color: $bg_light_cream;
   text-transform: capitalize;
@@ -27,7 +27,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 88%;
-  font-family: $description_font, serif;
+  font-family: $description_font, sans-serif;
   color: #bdbdbd;
   line-height: 1.7rem;
   text-align: center;
