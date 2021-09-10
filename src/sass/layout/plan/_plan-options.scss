@@ -58,3 +58,23 @@
 .active-text {
   color: $bg_light_cream;
 }
+
+.create-plan-order-container {
+  width: 100%;
+}
+
+.create-plan-order {
+  color: $bg_light_cream;
+  text-align: center;
+  background-color: $dark_cyan;
+  outline: 0;
+  border: 0;
+  text-transform: capitalize;
+  padding: 1.2rem 1.3rem;
+  font-family: $title_font, sans-serif;
+  font-size: 1.2rem;
+  width: 59%;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
