@@ -7,7 +7,7 @@ class Plan extends AbstractView {
   }
 
   getHtml() {
-    return `<h1>Plan Page</h1>`;
+    return ``;
   }
 }
 
