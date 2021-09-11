@@ -52,7 +52,7 @@ class Plan extends AbstractView {
 
       <section class="options-section">
 
-        <div class="option-title-container">
+        <div class="option-container">
           <h1 class="option-title-question">How do you drink your coffee?</h1>
           <img src="./icons/icon-arrow.svg" alt="Arrow icon" class="arrow" data-arrow>
           <div class="options-container">
@@ -80,7 +80,7 @@ class Plan extends AbstractView {
         </div>
 
 
-        <div class="option-title-container">
+        <div class="option-container">
           <h1 class="option-title-question">What type of coffee?</h1>
           <img src="./icons/icon-arrow.svg" alt="Arrow icon" class="arrow" data-arrow>
           <div class="options-container">
@@ -108,7 +108,7 @@ class Plan extends AbstractView {
         </div>
 
 
-        <div class="option-title-container">
+        <div class="option-container">
           <h1 class="option-title-question">How much would you like?</h1>
           <img src="./icons/icon-arrow.svg" alt="Arrow icon" class="arrow" data-arrow>
           <div class="options-container">
@@ -136,7 +136,7 @@ class Plan extends AbstractView {
         </div>
 
 
-        <div class="option-title-container">
+        <div class="option-container">
           <h1 class="option-title-question">Want us to grind them?</h1>
           <img src="./icons/icon-arrow.svg" alt="Arrow icon" class="arrow" data-arrow>
           <div class="options-container">
@@ -164,7 +164,7 @@ class Plan extends AbstractView {
         </div>
 
 
-        <div class="option-title-container">
+        <div class="option-container">
           <h1 class="option-title-question">How often should we deliver?</h1>
           <img src="./icons/icon-arrow.svg" alt="Arrow icon" class="arrow" data-arrow>
           <div class="options-container">
