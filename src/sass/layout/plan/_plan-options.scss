@@ -17,13 +17,15 @@
 
 .options-container {
   margin-top: 2rem;
+  position: relative;
+  display: none;
 }
 
 .arrow {
-  position: absolute;
+  // position: absolute;
   right: 0;
   top: 48%;
-  transform: scaleY(-1);
+  transform: translateX(78px);
 }
 
 .option-box {
@@ -77,4 +79,12 @@
   border-radius: 10px;
   margin: auto;
   display: block;
+}
+
+.show-option {
+  display: block;
+}
+
+.toggle-arrow {
+  transform: scaleY(-1) translateX(78px);
 }

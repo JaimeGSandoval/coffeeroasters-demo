@@ -3,7 +3,7 @@ import About from './views/About';
 import Plan from './views/Plan';
 
 const mobileNavOpen = () => {
-  document.querySelector('.mobile-nav-page').classList.toggle('show');
+  document.querySelector('.mobile-nav-page').classList.toggle('show-page');
 };
 
 document
@@ -11,7 +11,7 @@ document
   .addEventListener('click', mobileNavOpen);
 
 const mobileNavClose = () => {
-  document.querySelector('.mobile-nav-page').classList.toggle('show');
+  document.querySelector('.mobile-nav-page').classList.toggle('show-page');
 };
 
 document
