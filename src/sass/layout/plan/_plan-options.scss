@@ -22,9 +22,6 @@
 }
 
 .arrow {
-  // position: absolute;
-  right: 0;
-  top: 48%;
   transform: translateX(78px);
 }
 
@@ -34,19 +31,19 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
+  color: $dark_grey_blue;
+
 }
 
 .option-title {
   padding: 0 0 1rem 1rem;
   font-family: $title_font, serif;
-  color: $dark_grey_blue;
   font-size: 1.6rem;
 }
 
 .option-description {
   font-size: 1.1rem;
   font-family: $description_font;
-  color: $dark_grey_blue;
   line-height: 1.7rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -54,10 +51,6 @@
 
 .active {
   background-color: $dark_cyan;
-  color: $bg_light_cream;
-}
-
-.active-text {
   color: $bg_light_cream;
 }
 
