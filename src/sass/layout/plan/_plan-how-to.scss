@@ -1,14 +1,20 @@
-.plan-how-to-home {
-  margin-top: 8rem;
+.plan-how-to-section {
+  margin-top: 7rem;
+  background-color: $dark_grey_blue;
+  border-radius: .8rem;
+  width: 100vw;
+  margin-left: -7%;
 }
 
-.how-to-title {
-  text-align: center;
-  font-family: $title_font, serif;
-  color: $grey;
+.plan-how-to-section div:nth-of-type(1) {
+  padding-top: .8rem;
 }
 
-.step-number {
+.plan-how-to-section div:last-of-type {
+  padding-bottom: 5.8rem;
+}
+
+.plan-step-number {
   text-align: center;
   color: $pale_orange;
   font-family: $title_font, serif;
@@ -17,21 +23,21 @@
   margin-top: 5rem;
 }
 
-.step-title {
+.plan-step-title {
   text-align: center;
   font-family: $title_font, serif;
-  color: $dark_grey_blue;
+  color: $bg_light_cream;
   font-size: 1.7rem;
   margin-top: 1.4rem;
 }
 
-.step-description {
+.plan-step-description {
   margin-top: 1.8rem;
   text-align: center;
   font-family: $description_font;
   color: $grey;
   line-height: 1.5rem;
-  padding: 0 1.5rem;
+  padding: 0 1.1rem;
 }
 
 .custom-step-padding-1 {
@@ -50,6 +56,6 @@
   font-size: 1.2rem;
   width: 59%;
   border-radius: 10px;
-  margin:  5rem auto;
+  margin: 5rem auto;
   display: block;
 }
