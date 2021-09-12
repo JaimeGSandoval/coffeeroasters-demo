@@ -124,7 +124,7 @@ class Home extends AbstractView {
 
     <div class="spacer"></div>
 
-    <section class="plan-how-to-section">
+    <section class="plan-how-to-home">
       <h2 class="how-to-title">How it works</h2>
 
       <div class="step-box">
